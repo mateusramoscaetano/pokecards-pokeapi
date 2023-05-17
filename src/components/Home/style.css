@@ -1,0 +1,117 @@
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1480px;
+  height: 860px;
+
+  margin-top: 60px;
+}
+
+.typing-animation {
+  animation: typing 4s steps(40) 1s normal both;
+}
+
+.text-description {
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: var(--second-font-family);
+  font-size: 50px;
+  line-height: 80px;
+  color: #ffffff;
+  text-shadow: -2px -2px 0px #636363, -2px 0px 0px #636363, 2px -2px 0px #636363,
+    2px 1px 0px #636363;
+}
+.text2 {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-family: var(--second-font-family);
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  text-shadow: -2px -2px 0px #636363, -2px 0px 0px #636363, 2px -2px 0px #fff,
+    2px 1px 0px #fff;
+}
+
+.pokeball {
+  width: 50px;
+  margin-top: 25px;
+}
+
+.go-to-cards {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+
+  margin-top: 25px;
+
+  font-family: var(--second-font-family);
+  text-align: center;
+  color: #fff;
+  border: 2px solid #000;
+  background-color: rgb(239, 194, 134);
+  text-shadow: -2px -2px 0px #636363, -2px 0px 0px #636363, 2px -2px 0px #636363,
+    2px 1px 0px #636363;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.go-to-cards:hover {
+  transform: scale(1.02);
+  background-color: rgb(240, 181, 104);
+}
+
+.tracking-in-contract-bck-bottom {
+  -webkit-animation: tracking-in-contract-bck-bottom 10s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-bottom 10s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

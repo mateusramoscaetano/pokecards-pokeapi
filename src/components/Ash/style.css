@@ -1,0 +1,34 @@
+.ash-runner {
+  position: absolute;
+  top: 860px;
+  left: -100px;
+  width: 82px;
+  height: 100px;
+  background-image: url(../../assets/images/icons/right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: runner 10s linear infinite, shake 0.2s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes runner {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100%;
+  }
+}

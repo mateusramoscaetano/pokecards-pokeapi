@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #7978d9;
+  --hover-btn-color: #6b69d1;
+  --input-border: #555555;
+  --text-default: #484848;
+  --primary-font-family: "Inter", sans-serif;
+  --second-font-family: "Press Start 2P", sans-serif;
+}
+
+.font-800 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #1f2937;
+}
+.font-700 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #374151;
+}
+.font-500 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #6b7280;
+}
+.font-400 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #374151;
+}
